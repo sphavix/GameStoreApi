@@ -1,0 +1,29 @@
+GET http://localhost:5282/games
+
+###
+GET http://localhost:5282/games/4
+
+###
+POST http://localhost:5282/games
+Content-Type: application/json
+
+{
+  "name": "Euro Truck International",
+  "genre": "Racing",
+  "price": 49.99,
+  "releaseDate": "2011-09-01"
+}
+
+###
+PUT http://localhost:5282/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter III",
+    "genre": "Fighting",
+    "price": 24.99,
+    "releaseDate": "2024-07-15"
+}
+
+###
+DELETE http://localhost:5282/games/4
